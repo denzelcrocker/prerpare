@@ -18,7 +18,6 @@ public class DataModal {
     this.description = Description;
     this.rewiews = Rewiews;
     this.image = Image;
-
     }
     public String getTitle() {
         return title;

@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
             try {
-                URL url = new URL("https://ngknn.ru:5001/NGKNN/зеленцовдр/api/_1234Model/");//Строка подключения к нашей API
+                URL url = new URL("https://ngknn.ru:5001/NGKNN/зеленцовдр/api/GamesModels/");//Строка подключения к нашей API
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));

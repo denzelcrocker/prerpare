@@ -11,16 +11,16 @@ import retrofit2.http.Query;
 
 public interface RetrofitApi {
 
-    @GET("_1234Model/{Id}")
+    @GET("GamesModels/{Id}")
     Call<DataModal> getDATA(@Path("Id") int Id);
 
-    @POST("_1234Model")
+    @POST("GamesModels")
     Call<DataModal> createPost(@Body DataModal dataModal);
 
-    @PUT("_1234Model/{Id}")
+    @PUT("GamesModels/{Id}")
     Call<DataModal> updateData(@Query("Id") int Id, @Body DataModal dataModal);
 
-    @DELETE("_1234Model/{Id}")
+    @DELETE("GamesModels/{Id}")
     Call<Void> deleteData(@Path("Id") int Id);
 
 

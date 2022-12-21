@@ -6,30 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".ChangeActivity">
     <EditText
-        android:id="@+id/add_description"
+        android:id="@+id/edit_description"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/add_rewiews"
+        app:layout_constraintTop_toBottomOf="@+id/edit_availabilityInTheStore"
         tools:layout_editor_absoluteX="28dp" />
 
     <EditText
-        android:id="@+id/add_item_email4"
+        android:id="@+id/edit_rewiews"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/add_description"
+        app:layout_constraintTop_toBottomOf="@+id/edit_description"
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/add_rewiews"
+        android:id="@+id/edit_availabilityInTheStore"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/add_stockAvailability"
+        app:layout_constraintTop_toBottomOf="@+id/edit_stockAvailability"
         tools:layout_editor_absoluteX="100dp" />
 
     <ImageView
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageView
-        android:id="@+id/add_image"
+        android:id="@+id/edit_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
@@ -58,34 +58,34 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
-        android:id="@+id/add_title"
+        android:id="@+id/edit_title"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/add_image"
+        app:layout_constraintTop_toBottomOf="@id/edit_image"
         tools:layout_editor_absoluteX="100dp" />
 
     <EditText
-        android:id="@+id/add_cost"
+        android:id="@+id/edit_cost"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/add_title"
+        app:layout_constraintTop_toBottomOf="@id/edit_title"
         tools:layout_editor_absoluteX="100dp" />
 
     <EditText
-        android:id="@+id/add_stockAvailability"
+        android:id="@+id/edit_stockAvailability"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/add_cost"
+        app:layout_constraintTop_toBottomOf="@id/edit_cost"
         tools:layout_editor_absoluteX="100dp" />
 
     <ImageView
-        android:id="@+id/complete_add_item_btn"
+        android:id="@+id/complete_edit_item_btn"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginHorizontal="100dp"
@@ -94,5 +94,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_item_email4" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_rewiews" />
 </androidx.constraintlayout.widget.ConstraintLayout>

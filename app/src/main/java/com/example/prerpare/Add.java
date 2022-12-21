@@ -89,16 +89,16 @@ public class Add extends AppCompatActivity implements View.OnClickListener{
     }
 
 
-    private void postCreate(String Title, String Cost, String StockAvailability, String AvailabilityInTheStore, String Description, String Rewiews, String Image) {
+    private void postCreate(String Title, int Cost, int StockAvailability, int AvailabilityInTheStore, String Description, String Rewiews, String Image) {
 
 
         try {
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://ngknn.ru:5001/NGKNN/зеленцовдр/api/_1234Model/")
+                    .baseUrl("https://ngknn.ru:5001/NGKNN/зеленцовдр/api/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
             RetrofitApi retrofitAPI = retrofit.create(RetrofitApi.class);
-            DataModal modal = new DataModal(Title, Integer.parseInt(Cost), Integer.parseInt(StockAvailability), Integer.parseInt(AvailabilityInTheStore), Description, Rewiews, Image);
+            DataModal modal = new DataModal(Title, Cost, StockAvailability, AvailabilityInTheStore, Description, Rewiews, Image);
             Call<DataModal> call = retrofitAPI.createPost(modal);
             call.enqueue(new Callback<DataModal>() {
                 @Override
@@ -160,7 +160,7 @@ public class Add extends AppCompatActivity implements View.OnClickListener{
                 String Description = add_description.getText().toString();
                 String Rewiews = add_rewiews.getText().toString();
 
-                postCreate(Title, Cost, StockAvailability,AvailabilityInTheStore,Description,Rewiews, nPicture);
+                postCreate(Title, Integer.parseInt(Cost), Integer.parseInt(StockAvailability),Integer.parseInt(AvailabilityInTheStore),Description,Rewiews, nPicture);
                 new Handler().postDelayed(() -> startActivity(
                         new Intent(Add.this, MainActivity.class)), 1000);
 
